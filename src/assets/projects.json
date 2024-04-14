@@ -1,0 +1,26 @@
+[
+    {
+        "image": "/projects/stained-glass-recognizer.png",
+        "title": "Stained Glass Recognition App",
+        "description": "Project developed for a subject at CentraleSupélec during my double degree. I also used it to validate my course conclusion project with a maximum grade. I was a member of a group of four students, and we developed an Android application in Java capable of recognizing Stained Glass from churches. The mobile app sends the image selected by the user to an API. Then, an image pre-processing and classification script is executed to find the most similar stained glass image from the database. The result is sent back to the app and displayed to the user.",
+        "link": "https://github.com/HumbertoBPF/stained-glass-recognizer-mobile"
+    },
+    {
+        "image": "/projects/car-game.png",
+        "title": "Car Control on Keyboard",
+        "description": "Project developed for the computer graphics course at University of Sao Paulo. My group was required to develop a game to apply the theory seen in the course lectures. Unity was used as game development framework, and a Django and Android (in Java) applications were developed, allowing players to create accounts, register their scores in the games, and compete in a ranking.",
+        "link": "https://github.com/HumbertoBPF/car-controlling"
+    },
+    {
+        "image": "/projects/maxwell-app.png",
+        "title": "Maxwell Assistant",
+        "description": "Android application developed in Kotlin for personal use. It's a planner where I can register my tasks, studies, and finances. It is integrated with an AWS serverless application, allowing to backup the registered items and to restore them in case of app data loss.",
+        "link": "https://github.com/HumbertoBPF/maxwell-assistant"
+    },
+    {
+        "image": "/projects/pajelingo.png",
+        "title": "Pajelingo",
+        "description": "Web and mobile application for language learning. Users can create accounts and play games where they can practice key concepts of the languages available. Rankings and badges were implemented to add some competition. In addition, users have access to a dictionary tool. Front-end developed in React, back-end in Django, and mobile application in Android with Java.",
+        "link": "https://github.com/HumbertoBPF/Pajelingo"
+    }
+]

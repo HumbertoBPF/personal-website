@@ -1,0 +1,17 @@
+{
+    "label": "AWS Cloud",
+    "items": [
+        "EC2",
+        "RDS",
+        "S3",
+        "SQS",
+        "Lambda",
+        "DynamoDB",
+        "API Gateway",
+        "Cognito",
+        "CloudWatch",
+        "CloudFormation",
+        "SAM",
+        "KMS"
+    ]
+}

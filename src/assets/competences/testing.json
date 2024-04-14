@@ -1,0 +1,12 @@
+{
+    "label": "Testing",
+    "items": [
+        "Pytest",
+        "Selenium",
+        "Jest",
+        "React Testing Library",
+        "Cypress",
+        "JUnit",
+        "Espresso"
+    ]
+}

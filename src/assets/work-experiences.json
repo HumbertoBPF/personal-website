@@ -1,0 +1,10 @@
+[
+    {
+        "title": "Full-stack developer at brain4care (May 2022 - Now)",
+        "description": "Development of Django and Flask APIs for data anonymization, account management, and medical report access along with a React application consuming them. AWS infrastructure and relational (PostgreSQL) and non-relational (DynamoDB, MongoDB) databases. Other tasks involved review of interns' work, follow-up of security penetration tests, and task automation with Shell and Python."
+    },
+    {
+        "title": "Android developer at Dynseo (Jun 2021 - Dec 2021)",
+        "description": "Internship at Paris during my double degree at CentraleSupélec. Development of games for cerebral training while assuring compatibility with old Android versions."
+    }
+]
