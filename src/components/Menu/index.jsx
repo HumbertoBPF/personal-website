@@ -20,7 +20,7 @@ function Menu({ ...props }) {
     ];
 
     return (
-        <AppBar sx={{ marginBottom: '32px' }} position="static" {...props}>
+        <AppBar position="static" {...props}>
             <Container maxWidth="xl">
                 <Toolbar disableGutters>
                     <MobileMenu items={items} />

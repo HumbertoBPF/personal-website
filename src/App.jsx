@@ -7,6 +7,7 @@ import React from 'react';
 import { ThemeProvider } from '@emotion/react';
 import { createTheme } from '@mui/material';
 import Projects from 'pages/Projects';
+import NotFound from 'pages/NotFound';
 
 const theme = createTheme({
     components: {
@@ -32,6 +33,7 @@ function App() {
                         <Route path="/home" element={<Home />} />
                         <Route path="/projects" element={<Projects />} />
                         <Route path="/about-me" element={<AboutMe />} />
+                        <Route path="*" element={<NotFound />} />
                     </Route>
                 </Routes>
             </BrowserRouter>

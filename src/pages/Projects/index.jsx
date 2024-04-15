@@ -11,7 +11,7 @@ import awsCompetences from 'assets/competences/aws.json';
 function Projects() {
     return (
         <>
-            <Container>
+            <Container sx={{ marginTop: '32px' }}>
                 <Typography textAlign="center" variant="h4">
                     Selected projects
                 </Typography>

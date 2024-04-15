@@ -18,7 +18,7 @@ function Home() {
 
     return (
         <>
-            <Container>
+            <Container sx={{ marginTop: '32px' }}>
                 <Grid container>
                     <Grid sx={{ padding: '0 32px' }} item xs={12} md={6}>
                         <Avatar
