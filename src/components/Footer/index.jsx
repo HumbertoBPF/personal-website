@@ -1,19 +1,16 @@
-import { Box, Container, Grid, useTheme } from '@mui/material';
+import { Box, Container, Grid, Link, Typography } from '@mui/material';
 import React from 'react';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import FooterItem from 'components/FooterItem';
 import MediumIcon from 'components/MediumIcon';
-import Link from 'components/Link';
 
 function Footer({ ...props }) {
-    const theme = useTheme();
-
     return (
         <Box
             sx={{
-                backgroundColor: theme.palette.primary.main,
-                padding: '8px',
+                backgroundColor: 'primary.main',
+                padding: '8px 0',
             }}
         >
             <Container maxWidth="xl">
@@ -32,6 +29,7 @@ function Footer({ ...props }) {
                             underline="none"
                             target="_blank"
                             rel="noopener"
+                            data-testid="linkedin-link"
                         >
                             <LinkedInIcon
                                 sx={{
@@ -40,7 +38,9 @@ function Footer({ ...props }) {
                                     marginRight: '4px',
                                 }}
                             />
-                            Find me on LinkedIn
+                            <Typography variant="body2">
+                                Find me on LinkedIn
+                            </Typography>
                         </Link>
                     </FooterItem>
                     <FooterItem>
@@ -49,6 +49,7 @@ function Footer({ ...props }) {
                             underline="none"
                             target="_blank"
                             rel="noopener"
+                            data-testid="github-link"
                         >
                             <GitHubIcon
                                 sx={{
@@ -57,7 +58,9 @@ function Footer({ ...props }) {
                                     marginRight: '4px',
                                 }}
                             />
-                            Check my coding projects
+                            <Typography variant="body2">
+                                Check my coding projects
+                            </Typography>
                         </Link>
                     </FooterItem>
                     <FooterItem>
@@ -66,6 +69,7 @@ function Footer({ ...props }) {
                             underline="none"
                             target="_blank"
                             rel="noopener"
+                            data-testid="medium-link"
                         >
                             <Box
                                 sx={{
@@ -77,7 +81,9 @@ function Footer({ ...props }) {
                             >
                                 <MediumIcon />
                             </Box>
-                            Check my Medium articles
+                            <Typography variant="body2">
+                                Check my Medium articles
+                            </Typography>
                         </Link>
                     </FooterItem>
                 </Grid>

@@ -25,9 +25,14 @@ function Home() {
                             sx={{ width: '96px', height: '96px' }}
                             alt="Humberto Borges"
                             src={MyPicture}
+                            data-testid="avatar"
                         />
-                        <Typography mt="32px" variant="h4">
-                            Hi! I'm Humberto Borges
+                        <Typography
+                            mt="32px"
+                            variant="h4"
+                            data-testid="greeting"
+                        >
+                            Hi! I&apos;m Humberto Borges
                         </Typography>
                     </Grid>
                     <Grid
@@ -39,7 +44,7 @@ function Home() {
                         md={6}
                     >
                         <Grid item>
-                            <Typography variant="h5">
+                            <Typography variant="h5" data-testid="profession">
                                 Full-stack developer
                             </Typography>
                             <Typography variant="body2">
@@ -53,6 +58,7 @@ function Home() {
                                     href="https://www.linkedin.com/in/humberto-bpf"
                                     target="_blank"
                                     rel="noopener"
+                                    data-testid="linkedin-button"
                                 >
                                     Contact me
                                 </Button>
@@ -60,6 +66,7 @@ function Home() {
                                     sx={{ marginLeft: '8px' }}
                                     variant="outlined"
                                     onClick={() => navigate('/projects')}
+                                    data-testid="projects-button"
                                 >
                                     Check my work
                                 </Button>
@@ -74,28 +81,50 @@ function Home() {
                         sx={{ marginTop: '32px', paddingTop: '32px' }}
                         container
                     >
-                        <Grid sx={{ padding: '0px 32px' }} item xs={12} md={6}>
+                        <Grid
+                            sx={{ padding: '0px 32px' }}
+                            item
+                            xs={12}
+                            md={6}
+                            data-testid="work-experience-section"
+                        >
                             <Typography
                                 sx={{ marginBottom: '16px' }}
                                 variant="h5"
+                                data-testid="section-title"
                             >
-                                Working experience
+                                Work experience
                             </Typography>
 
                             {workExperiences.map((item, index) => (
-                                <CurriculumItem key={index} item={item} />
+                                <CurriculumItem
+                                    key={index}
+                                    item={item}
+                                    data-testid={`work-experience-${index}`}
+                                />
                             ))}
                         </Grid>
-                        <Grid sx={{ padding: '0px 32px' }} item xs={12} md={6}>
+                        <Grid
+                            sx={{ padding: '0px 32px' }}
+                            item
+                            xs={12}
+                            md={6}
+                            data-testid="educational-background-section"
+                        >
                             <Typography
                                 sx={{ marginBottom: '16px' }}
                                 variant="h5"
+                                data-testid="section-title"
                             >
                                 Degrees and certifications
                             </Typography>
 
                             {degreesAndCertifications.map((item, index) => (
-                                <CurriculumItem key={index} item={item} />
+                                <CurriculumItem
+                                    key={index}
+                                    item={item}
+                                    data-testid={`education-${index}`}
+                                />
                             ))}
                         </Grid>
                     </Grid>

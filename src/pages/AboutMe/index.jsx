@@ -6,7 +6,11 @@ function AboutMe() {
     return (
         <Box display="flex" justifyContent="center">
             <Container sx={{ margin: '32px 0' }}>
-                <Typography sx={{ marginBottom: '16px' }} variant="h5">
+                <Typography
+                    sx={{ marginBottom: '16px' }}
+                    variant="h5"
+                    data-testid="about-me-title"
+                >
                     Thank you for checking my website!
                 </Typography>
                 <Grid container>
@@ -16,6 +20,7 @@ function AboutMe() {
                             component="img"
                             image={MyPicture}
                             alt="Humberto Borges"
+                            data-testid="profile-picture"
                         />
                     </Grid>
                     <Grid sx={{ padding: '16px' }} item xs={12} sm={9}>
@@ -34,9 +39,9 @@ function AboutMe() {
                             Paulo. In the middle of my course, I went to study
                             in France for two and half years by participating in
                             the double degree program of CentraleSupélec. Now,
-                            I'm double graduated by these two institutions and I
-                            work as a full-stack developer, but I also have
-                            experience with mobile.
+                            I&apos;m double graduated by these two institutions
+                            and I work as a full-stack developer, but I also
+                            have experience with mobile.
                         </Typography>
                         <Typography sx={{ marginTop: '8px' }} variant="body2">
                             In my spare time, besides doing what everyone does

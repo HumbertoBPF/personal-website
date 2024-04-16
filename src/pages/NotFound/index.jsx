@@ -1,5 +1,5 @@
 import React from 'react';
-import { Alert, AlertTitle, Box, Button } from '@mui/material';
+import { Alert, AlertTitle, Box, Button, Typography } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
 
 function NotFound() {
@@ -20,8 +20,10 @@ function NotFound() {
                 variant="filled"
             >
                 <Box>
-                    <AlertTitle>Page not found</AlertTitle>
-                    The page that you tried to access doesn't exist.
+                    <AlertTitle data-testid="title">Page not found</AlertTitle>
+                    <Typography variant="body2" data-testid="text">
+                        The page that you tried to access doesn&apos;t exist.
+                    </Typography>
                 </Box>
             </Alert>
             <Box
@@ -33,6 +35,7 @@ function NotFound() {
                     sx={{ margin: '0 0 16px 0' }}
                     variant="contained"
                     onClick={() => navigate('/home')}
+                    data-testid="homepage-button"
                 >
                     Go to the homepage
                 </Button>

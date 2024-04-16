@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import PropTypes from 'prop-types';
 import { Box, IconButton, Menu, MenuItem, Typography } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import CodeIcon from '@mui/icons-material/Code';
@@ -53,13 +54,14 @@ function MobileMenu({ items }) {
                         display: { xs: 'block', md: 'none' },
                     }}
                 >
-                    {items.map((item) => (
+                    {items.map((item, index) => (
                         <MenuItem
                             key={item.text}
                             onClick={() => {
                                 navigate(item.link);
                                 handleCloseNavMenu();
                             }}
+                            data-testid={`mobile-menu-item-${index}`}
                         >
                             <Typography textAlign="center">
                                 {item.text}
@@ -73,3 +75,12 @@ function MobileMenu({ items }) {
 }
 
 export default MobileMenu;
+
+MobileMenu.propTypes = {
+    items: PropTypes.arrayOf(
+        PropTypes.shape({
+            text: PropTypes.string,
+            link: PropTypes.string,
+        })
+    ),
+};

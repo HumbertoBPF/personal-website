@@ -12,7 +12,11 @@ function Projects() {
     return (
         <>
             <Container sx={{ marginTop: '32px' }}>
-                <Typography textAlign="center" variant="h4">
+                <Typography
+                    textAlign="center"
+                    variant="h4"
+                    data-testid="projects-title"
+                >
                     Selected projects
                 </Typography>
                 <Grid sx={{ margin: '16px -16px' }} container spacing="16px">
@@ -24,7 +28,10 @@ function Projects() {
                             xs={12}
                             md={6}
                         >
-                            <ProjectCard item={project} />
+                            <ProjectCard
+                                item={project}
+                                data-testid={`project-${index}`}
+                            />
                         </Grid>
                     ))}
                 </Grid>
@@ -35,6 +42,7 @@ function Projects() {
                         sx={{ marginTop: '32px', paddingTop: '32px' }}
                         textAlign="center"
                         variant="h4"
+                        data-testid="competences-title"
                     >
                         Competences
                     </Typography>
@@ -50,18 +58,22 @@ function Projects() {
                     <CompetencesList
                         label={webCompetences.label}
                         items={webCompetences.items}
+                        data-testid="web-competences"
                     />
                     <CompetencesList
                         label={mobileCompetences.label}
                         items={mobileCompetences.items}
+                        data-testid="mobile-competences"
                     />
                     <CompetencesList
                         label={testingCompetences.label}
                         items={testingCompetences.items}
+                        data-testid="testing-competences"
                     />
                     <CompetencesList
                         label={awsCompetences.label}
                         items={awsCompetences.items}
+                        data-testid="aws-competences"
                     />
                 </Container>
             </Box>

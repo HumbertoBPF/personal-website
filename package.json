@@ -9,8 +9,8 @@
         "@mui/icons-material": "^5.15.15",
         "@mui/material": "^5.15.15",
         "@testing-library/jest-dom": "^5.17.0",
-        "@testing-library/react": "^13.4.0",
         "@testing-library/user-event": "^13.5.0",
+        "prop-types": "^15.8.1",
         "react": "^18.2.0",
         "react-dom": "^18.2.0",
         "react-router-dom": "^6.22.3",
@@ -18,10 +18,13 @@
         "web-vitals": "^2.1.4"
     },
     "scripts": {
-        "start": "react-scripts start",
+        "start": "react-scripts -r @cypress/instrument-cra start",
         "build": "react-scripts build",
         "test": "react-scripts test",
-        "eject": "react-scripts eject"
+        "eject": "react-scripts eject",
+        "cypress:open": "cypress open",
+        "jest-test:coverage": "npm run test -- --coverage --watchAll=false --coverageDirectory=jest-coverage",
+        "cypress-test:coverage": "cypress run"
     },
     "eslintConfig": {
         "extends": [
@@ -42,9 +45,15 @@
         ]
     },
     "devDependencies": {
+        "@cypress/code-coverage": "^3.12.34",
+        "@cypress/instrument-cra": "^1.4.0",
         "@eslint/js": "^9.0.0",
+        "@faker-js/faker": "^8.4.1",
+        "@testing-library/react": "^15.0.2",
+        "cypress": "^13.7.3",
         "eslint": "^8.57.0",
         "eslint-config-prettier": "^9.1.0",
+        "eslint-plugin-cypress": "^2.15.1",
         "eslint-plugin-react": "^7.34.1",
         "prettier": "3.2.5"
     }

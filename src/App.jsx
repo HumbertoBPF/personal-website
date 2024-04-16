@@ -18,6 +18,15 @@ const theme = createTheme({
                 },
             },
         },
+        MuiLink: {
+            styleOverrides: {
+                root: {
+                    color: 'white',
+                    display: 'flex',
+                    alignItems: 'center',
+                },
+            },
+        },
     },
     palette: {
         primary: { main: '#004aad' },

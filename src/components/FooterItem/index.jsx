@@ -1,4 +1,5 @@
 import { Grid } from '@mui/material';
+import PropTypes from 'prop-types';
 import React from 'react';
 
 function FooterItem({ children, ...props }) {
@@ -10,3 +11,7 @@ function FooterItem({ children, ...props }) {
 }
 
 export default FooterItem;
+
+FooterItem.propTypes = {
+    children: PropTypes.node,
+};
